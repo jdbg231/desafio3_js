@@ -30,10 +30,10 @@ while (newPokemonToAdd == "si") {
 
 
 alert("estos son todos los pokemones =>" + pokemones.toString())
-
+//
 const guardarLocal = (clave, valor) => { localStorage.setItem(clave, valor) };
-
-for (const pokemon of pokemones) {
-    guardarLocal(pokemon.nombre, JSON.stringify(pokemon));
-}
+//
+// for (const pokemon of pokemones) {
+//     guardarLocal(pokemon.nombre, JSON.stringify(pokemon));
+// }
 guardarLocal("listaPokemones", JSON.stringify(pokemones));
