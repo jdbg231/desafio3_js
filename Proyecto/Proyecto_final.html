@@ -3,13 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <title>Pokedex</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="estilos.css">
     <script src="js.js"></script>
 
 </head>
 <body>
 
-Hola, soy un pokedex.
+<div class="container">
+
+    <div class="logo">
+        <img src="https://cdn2.bulbagarden.net/upload/4/4b/Pok%C3%A9dex_logo.png" alt="">
+    </div>
+
+    <h2>Ingresa tu Pokemon</h2>
+
+    <div class="grilla_form">
+
+        <form action="">
+
+            <label for="Nombre">Nombre</label>
+            <input type="text" name="nombre" class="formulario" placeholder="Nombre pokemon">
+
+            <label for="cars">Tipo de Pokemon</label>
+
+            <select name="tipo" class="formulario select-form">
+                <option value="">Escoge tipo de pokemon</option>
+                <option value="normal">Normal</option>
+                <option value="fuego">Fuego</option>
+                <option value="electrico">Electrico</option>
+                <option value="agua">Agua</option>
+                <option value="lucha">Lucha</option>
+                <option value="Volador">Volador</option>
+                <option value="veneno">Veneno</option>
+                <option value="tierra">Tierra</option>
+                <option value="roca">Roca</option>
+                <option value="bicho">Bicho</option>
+                <option value="fantasma">Fantasma</option>
+                <option value="acero">Acero</option>
+                <option value="planta">Planta</option>
+                <option value="psiquico">Psíquico</option>
+                <option value="hielo">Hielo</option>
+                <option value="dragon">Dragón</option>
+                <option value="hada">Hada</option>
+                <option value="siniestro">Siniestro</option>
+            </select>
+
+            <label for="nivel">Nivel</label>
+            <input type="number" name="nivel" class="formulario" placeholder="Nivel del pokemon" min="1" max="200">
+
+            <input type="button" name="boton_enviar" class="boton_enviar" value="Enviar" id="btn_form">
+
+        </form>
+    </div>
+
+    <div class="btn_list">
+        <button>Ver lista de pokemones</button>
+    </div>
+</div>
+
+<script>
+    let boton = document.getElementById("btn_form")
+    boton.addEventListener("click", respuestaClick)
+    function respuestaClick(){
+        alert("pokemon creado");
+    }
+</script>
 
 </body>
 </html>
