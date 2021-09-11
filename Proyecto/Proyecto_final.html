@@ -25,11 +25,11 @@
         <form action="">
 
             <label for="Nombre">Nombre</label>
-            <input type="text" name="nombre" class="formulario" placeholder="Nombre pokemon">
+            <input type="text" name="nombre" id="nameInput" class="formulario" placeholder="Nombre pokemon">
 
             <label for="cars">Tipo de Pokemon</label>
 
-            <select name="tipo" class="formulario select-form">
+            <select name="tipo" id="typeInput" class="formulario select-form">
                 <option value="">Escoge tipo de pokemon</option>
                 <option value="normal">Normal</option>
                 <option value="fuego">Fuego</option>
@@ -60,7 +60,7 @@
     </div>
 
     <div class="btn_list">
-        <button>Ver lista de pokemones</button>
+        <button><a href="pokedex.html">Ver lista de pokemones</a></button>
     </div>
 </div>
 
@@ -68,7 +68,25 @@
     let boton = document.getElementById("btn_form")
     boton.addEventListener("click", respuestaClick)
     function respuestaClick(){
-        alert("pokemon creado");
+
+        console.log("sdasdsa " +document.getElementById('nameInput'))
+
+        let pokemonName = getValuePerId("nameInput")
+        let type = getValuePerId("typeInput")
+
+        if (type === "") {
+          alert("select the pokemon type")
+        }
+
+        console.log("my pokemonName is ", pokemonName)
+        console.log("this is my type => ", type)
+
+
+        alert("pokemon creado " + pokemonName);
+    }
+
+    function getValuePerId(inputId){
+        return document.getElementById(inputId).value
     }
 </script>
 

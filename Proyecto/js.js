@@ -1,4 +1,4 @@
-// let newPokemonToAdd = prompt("quieres agregar un pokemon?");
+// `let newPokemonToAdd = prompt("quieres agregar un pokemon?");
 //
 // class Pokemon {
 //     constructor(nombre, tipo, nivel) {
@@ -38,4 +38,29 @@
 // // for (const pokemon of pokemones) {
 // //     guardarLocal(pokemon.nombre, JSON.stringify(pokemon));
 // // }
-// guardarLocal("listaPokemones", JSON.stringify(pokemones));
+// guardarLocal("listaPokemones", JSON.stringify(pokemones));`
+
+
+// let boton = document.getElementById("btn_form")
+// boton.addEventListener("click", respuestaClick)
+// function respuestaClick(){
+//
+//     console.log("sdasdsa " +document.getElementById('nameInput'))
+//
+//     let pokemonName = getValuePerId("nameInput")
+//     let type = getValuePerId("typeInput")
+//
+//     if (type === "") {
+//         alert("select the pokemon type")
+//     }
+//
+//     console.log("my pokemonName is ", pokemonName)
+//     console.log("this is my type => ", type)
+//
+//
+//     alert("pokemon creado " + pokemonName + "nivel " + );
+// }
+//
+// function getValuePerId(inputId){
+//     return document.getElementById(inputId).value
+// }
