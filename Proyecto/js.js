@@ -64,3 +64,27 @@
 // function getValuePerId(inputId){
 //     return document.getElementById(inputId).value
 // }
+
+// let boton = $('#btn_form')
+// $(boton).click(respuestaClick);
+// function respuestaClick(){
+//
+//     console.log("Pokemon creado " + $('#nameInput'))
+//
+//     let pokemonName = getValuePerId("nameInput")
+//     let type = getValuePerId("typeInput")
+//
+//     if (type === "") {
+//         alert("selecciona el tipo de pokemon")
+//     }
+//
+//     console.log("EL nombre de mi pokemon es", pokemonName)
+//     console.log("Este es el tipo => ", type)
+//
+//
+//     alert("pokemon creado " + pokemonName);
+// }
+//
+// function getValuePerId(inputId){
+//     return document.getElementById(inputId).value
+// }

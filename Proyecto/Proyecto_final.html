@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Pokedex</title>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="js.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="estilos.css">
-    <script src="js.js"></script>
-
 </head>
 <body>
 
@@ -65,21 +65,21 @@
 </div>
 
 <script>
-    let boton = document.getElementById("btn_form")
-    boton.addEventListener("click", respuestaClick)
+    let boton = $('#btn_form')
+    $(boton).click(respuestaClick);
     function respuestaClick(){
 
-        console.log("sdasdsa " +document.getElementById('nameInput'))
+        console.log("Pokemon creado " + $('#nameInput'))
 
         let pokemonName = getValuePerId("nameInput")
         let type = getValuePerId("typeInput")
 
         if (type === "") {
-          alert("select the pokemon type")
+          alert("selecciona el tipo de pokemon")
         }
 
-        console.log("my pokemonName is ", pokemonName)
-        console.log("this is my type => ", type)
+        console.log("EL nombre de mi pokemon es", pokemonName)
+        console.log("Este es el tipo => ", type)
 
 
         alert("pokemon creado " + pokemonName);
